@@ -34,9 +34,9 @@
   var ag = $('.artGroup');
   var btn01 = $('.btn>i').eq(0);
   var btn02 = $('.btn>i').eq(1);
-  var pjs1 = $('.pjs01');
-  var pjs2 = $('.pjs02');
-  var pjs3 = $('.pjs03');
+  var pjs1 = $('.pjs.01');
+  var pjs2 = $('.pjs.02');
+  var pjs3 = $('.pjs.03');
 
   var i = 0;
 
@@ -50,7 +50,6 @@
     if(i>2){
       i=2
     }
-
     if(i == 0){
       pjs1.css({
         fontWeight: '700'
@@ -83,6 +82,11 @@
       });
     }
 
+    if(i == 2) {
+      $('i').eq(1).css('opacity', '0')
+      } else if(i != 2) {
+      $('i').eq(0).css('opacity', '1')
+    };
     ag.css({
       marginLeft: i * -100 + '%'
     });
@@ -127,6 +131,11 @@
       });
     }
 
+    if(i == 0) {
+      $('i').eq(0).css('opacity', '0')
+      } else if(i != 0) {
+      $('i').eq(1).css('opacity', '1')
+    };
 
     ag.css({
       marginLeft: i * -100 + '%'

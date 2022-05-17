@@ -384,8 +384,7 @@ input, select, textarea {
 			width: 50%;
       overflow: hidden;
       position: relative;
-  
-		}
+	}
     .silde{
       width: 100%;
       overflow: hidden;
@@ -413,7 +412,12 @@ input, select, textarea {
       font-size: 3em;
       line-height: 3em;
       cursor: pointer;
+	  color: #626262;
     }
+
+	.pjs{
+		transition: all 0.5s;
+	}
 
 
 		.row > .off-6 {
@@ -542,8 +546,7 @@ input, select, textarea {
 		}
 
 			.row.gtr-150 > * {
-        /* 포트폴리오 맨뒤에 3em인데 수정함*/
-				padding: 0 0 0 0;
+				padding: 0 0 0 3em;
 			}
 
 			.row.gtr-150.gtr-uniform {
@@ -787,7 +790,6 @@ input, select, textarea {
 				}
 
 					.row.gtr-150 > * {
-            /* 포트폴리오 맨뒤에 3em인데 수정함*/
 						padding: 0 0 0 3em;
 					}
 
@@ -2313,7 +2315,7 @@ input, select, textarea {
 		position: relative;
 	}
 
-		.icon:before {
+		/* .icon:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
 			display: inline-block;
@@ -2332,13 +2334,13 @@ input, select, textarea {
 
 		.icon:before {
 			line-height: inherit;
-		}
+		} */
 
 		.icon.solid:before {
 			font-weight: 900 !important;
 		}
 
-		.icon.brands:before {
+		/* .icon.brands:before {
 			font-family: 'Font Awesome 5 Brands';
 		}
 
@@ -2364,7 +2366,7 @@ input, select, textarea {
 
 		.icon.style6:before {
 			color: #6b88e6;
-		}
+		} */
 
 		.icon.major {
 			text-decoration: none;
@@ -2391,6 +2393,80 @@ input, select, textarea {
 				font-size: 4em;
 				line-height: 1em;
 			}
+
+
+/* 포트폴리오 xeicon */
+li>i .icon {
+	text-decoration: none;
+	border-bottom: none;
+	position: relative;
+}
+
+li>i .icon:before {
+		-moz-osx-font-smoothing: grayscale;
+		-webkit-font-smoothing: antialiased;
+		display: inline-block;
+		font-style: normal;
+		font-variant: normal;
+		text-rendering: auto;
+		line-height: 1;
+		text-transform: none !important;
+		font-family: 'Font Awesome 5 Free';
+		font-weight: 400;
+	}
+
+	li>i.icon > .label {
+		display: none;
+	}
+
+	li>i.icon:before {
+		line-height: inherit;
+	}
+
+	li>i.icon.solid:before {
+		font-weight: 900 !important;
+	}
+
+	li>i.icon.brands:before {
+		font-family: 'Font Awesome 5 Brands';
+	}
+
+	li>i.icon.style1:before {
+		color: #af81c9;
+		font-size: 3em;
+		text-shadow: 1px 2px 3px rgb(53, 53, 53);
+	}
+
+	li>i.icon.style2:before {
+		color: #f89a7e;
+		font-size: 3em;
+		text-shadow: 1px 2px 3px rgb(53, 53, 53);
+	}
+
+	li>i.icon.style3:before {
+		color: #f2ca85;
+		font-size: 3em;
+		text-shadow: 1px 2px 3px rgb(53, 53, 53);
+	}
+
+	li>i.icon.style4:before {
+		color: #54d1f1;
+		font-size: 3em;
+		text-shadow: 1px 2px 3px rgb(53, 53, 53);
+	}
+
+	li>i.icon.style5:before {
+		color: #7c71ad;
+		font-size: 3em;
+		text-shadow: 1px 2px 3px rgb(53, 53, 53);
+	}
+
+	li>i.icon.style6:before {
+		color: #445569;
+		font-size: 3em;
+		text-shadow: 1px 2px 3px rgb(53, 53, 53);
+	}
+
 
 /* Image */
 
@@ -3554,16 +3630,23 @@ input, select, textarea {
 	}
 
 
-	/* 추가 코딩 */
+	/* 포트폴리오 */
 	p {
-		font-size: 0.8em;
+		font-size: 0.75em;
 		font-family: 'NotoSansKR-Regular';
+		line-height: 1.4em;
+		margin: 0 0 1.1em 0;
 	}
 
 
 	@font-face {
 		font-family: 'NotoSansKR-Regular';
 		src: url('./fonts/NotoSansKR-Regular.otf') format('truetype');
+	}
+
+	@font-face {
+		font-family: 'xeicon';
+		src: url('./fonts/xeicon.ttf') format('truetype');
 	}
 	
 	@font-face {
