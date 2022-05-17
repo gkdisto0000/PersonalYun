@@ -3675,3 +3675,22 @@ li>i .icon:before {
 	ul>li{
 		font-family: 'NotoSansKR-Regular';
 	}
+
+
+	/* top버튼 */
+	.Top{
+		position: fixed;
+		cursor: pointer;
+		right: 1em;
+		bottom: 2em;
+		color: #fff;
+		font-size: 0.8em;
+		line-height: 1em;
+		background-color: #4361c2;
+		border-radius: 10px;
+		width: 3em;
+		height: 3em;
+		text-align: center;
+		background: linear-gradient(180deg, #c37b87 0%, #446382 50%, #4361c2 100%);
+		z-index: 9999;
+	}
