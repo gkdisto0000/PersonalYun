@@ -380,8 +380,41 @@ input, select, textarea {
 		}
 
 		.row > .col-6 {
+      /* 포트폴리오 */
 			width: 50%;
+      overflow: hidden;
+      position: relative;
+  
 		}
+    .silde{
+      width: 100%;
+      overflow: hidden;
+    }
+    .artGroup {
+      width: 300%;
+      display: flex;
+      justify-content: space-between;
+      transition: all 0.5s;
+    }
+    .artGroup>.image{
+      width: calc(100% / 3);
+
+    }
+    .btn{
+      padding-top: 12%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 999;
+      display: flex;
+      justify-content: space-between;
+    }
+    .btn>i{
+      font-size: 3em;
+      line-height: 3em;
+      cursor: pointer;
+    }
+
 
 		.row > .off-6 {
 			margin-left: 50%;
@@ -509,7 +542,8 @@ input, select, textarea {
 		}
 
 			.row.gtr-150 > * {
-				padding: 0 0 0 3em;
+        /* 포트폴리오 맨뒤에 3em인데 수정함*/
+				padding: 0 0 0 0;
 			}
 
 			.row.gtr-150.gtr-uniform {
@@ -749,9 +783,11 @@ input, select, textarea {
 				.row.gtr-150 {
 					margin-top: 0;
 					margin-left: -3em;
+          
 				}
 
 					.row.gtr-150 > * {
+            /* 포트폴리오 맨뒤에 3em인데 수정함*/
 						padding: 0 0 0 3em;
 					}
 

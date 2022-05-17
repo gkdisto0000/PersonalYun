@@ -29,4 +29,109 @@
 	// Scrolly.
 		$('.scrolly').scrolly();
 
+  
+  // one slide
+  var ag = $('.artGroup');
+  var btn01 = $('.btn>i').eq(0);
+  var btn02 = $('.btn>i').eq(1);
+  var pjs1 = $('.pjs01');
+  var pjs2 = $('.pjs02');
+  var pjs3 = $('.pjs03');
+
+  var i = 0;
+
+  // 초기세팅
+  pjs1.css({
+    fontWeight: '700'
+  });
+
+  btn02.click(function(){
+    i++;
+    if(i>2){
+      i=2
+    }
+
+    if(i == 0){
+      pjs1.css({
+        fontWeight: '700'
+      });
+      pjs2.css({
+        fontWeight: ''
+      });
+      pjs3.css({
+        fontWeight: ''
+      });
+    }else if(i==1){
+      pjs1.css({
+        fontWeight: ''
+      });
+      pjs2.css({
+        fontWeight: '700'
+      });
+      pjs3.css({
+        fontWeight: ''
+      });
+    }else if(i==2){
+      pjs1.css({
+        fontWeight: ''
+      });
+      pjs2.css({
+        fontWeight: ''
+      });
+      pjs3.css({
+        fontWeight: '700'
+      });
+    }
+
+    ag.css({
+      marginLeft: i * -100 + '%'
+    });
+  });
+
+  
+  btn01.click(function(){
+    i--;
+    if(i<0){
+      i=0
+    }
+
+    if(i == 0){
+      pjs1.css({
+        fontWeight: '700'
+      });
+      pjs2.css({
+        fontWeight: ''
+      });
+      pjs3.css({
+        fontWeight: ''
+      });
+    }else if(i==1){
+      pjs1.css({
+        fontWeight: ''
+      });
+      pjs2.css({
+        fontWeight: '700'
+      });
+      pjs3.css({
+        fontWeight: ''
+      });
+    }else if(i==2){
+      pjs1.css({
+        fontWeight: ''
+      });
+      pjs2.css({
+        fontWeight: ''
+      });
+      pjs3.css({
+        fontWeight: '700'
+      });
+    }
+
+
+    ag.css({
+      marginLeft: i * -100 + '%'
+    });
+  });
+
+
 })(jQuery);
