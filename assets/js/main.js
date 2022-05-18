@@ -167,13 +167,22 @@
     }, 500)
   });
 
-  console.log($(window).scrollTop());
+  // $('.Top').fadeOut();
+  $('.Top').css({
+    opacity: '0'
+  });
 
+
+  
   $(window).scroll(function(){
     if($(window).scrollTop()>100){
-      $('.Top').fadeIn();
+      $('.Top').css({
+        opacity: '1'
+      });
     }else {
-      $('.Top').fadeOut();
+      $('.Top').css({
+        opacity: '0'
+      });
     }
   });
 })(jQuery);

@@ -3693,4 +3693,5 @@ li>i .icon:before {
 		text-align: center;
 		background: linear-gradient(180deg, #c37b87 0%, #446382 50%, #4361c2 100%);
 		z-index: 9999;
+		transition: all 0.5s;
 	}
