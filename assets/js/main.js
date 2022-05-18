@@ -167,5 +167,14 @@
     }, 500)
   });
 
+  console.log($(window).scrollTop());
+
+  $(window).scroll(function(){
+    if($(window).scrollTop()>100){
+      $('.Top').fadeIn();
+    }else {
+      $('.Top').fadeOut();
+    }
+  });
 })(jQuery);
 
