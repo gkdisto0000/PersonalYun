@@ -2510,6 +2510,7 @@ li>i .icon:before {
 
 			.image.fit img {
 				width: 100%;
+				box-shadow: 3px 3px 3px #445569;
 			}
 
 /* List */
