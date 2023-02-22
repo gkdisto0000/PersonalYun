@@ -511,21 +511,40 @@ pre code {
 
 }
 
+/* section01 txts */
+.sec01 {line-height: 30px; font-size: 16px; width: 100%; padding: 20px; margin-left: 20px; }
+
+.sec01 li{margin-top: 20px;}
+.sec01 li:nth-child(1) {margin-top: 0;}
+
+.sec01H3 {position: relative;}
+.sec01arrowWrap {display: flex; width: 50%;}
+
 .btn {
-  position: absolute;
-  bottom: -9.5%;
-  right: 0;
+
   z-index: 999;
   display: flex;
-  justify-content: space-between;
+  margin: 0 0 0 auto;
 }
 
 .btn>i {
-  font-size: 3em;
-  line-height: 3em;
+  font-size: 25px;
   cursor: pointer;
-  color: #626262;
+  color: #fff;
+  background-color: #555;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%; 
+  margin-left: 10px;
+  transition: all 0.5s;
+  line-height: 35px;
+  text-align: center;
+  box-shadow: 0 0 5px 0 rgb(0 0 0 / 15%);
 }
+
+.btn>i:nth-child(1):hover {background-color: #9c769e;} 
+.btn>i:nth-child(2):hover {background-color: #6768ab;}
+
 
 .pjs {
   transition: all 0.5s;
@@ -653,7 +672,7 @@ pre code {
 }
 
 .row.gtr-150 {
-  margin-top: 0;
+  margin-top: 40px;
   margin-left: -3em;
 }
 
@@ -896,7 +915,7 @@ pre code {
   }
 
   .row.gtr-150 {
-    margin-top: 0;
+    margin-top: 40px;
     margin-left: -3em;
 
   }
@@ -2630,6 +2649,8 @@ li>i.icon.style6:before {
 .image.fit img {
   width: 100%;
   box-shadow: 3px 3px 3px #445569;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 /* List */
@@ -2646,8 +2667,7 @@ ol li {
 
 ul {
   list-style: disc;
-  margin: 0 0 2em 0;
-  padding-left: 1em;
+  margin: 0 0 1em 0;
 }
 
 ul li {
@@ -2745,6 +2765,7 @@ ul.actions.fit.stacked {
 }
 
 @media screen and (max-width: 480px) {
+  .sec01arrowWrap {display: flex; width: 50%; margin: 0 auto;}
 
   ul.actions:not(.fixed) {
     -moz-flex-direction: column;
