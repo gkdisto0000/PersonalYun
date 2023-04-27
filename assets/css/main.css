@@ -3873,3 +3873,62 @@ ul>li {
   z-index: 9999;
   transition: all 0.5s;
 }
+
+/* gnb */
+.container {position: relative;}
+.gnb {position: fixed; z-index: 9999999; top:-80px; left: 0; width: 100%; transition : all 0.5; background-color: #000; transition: all 0.5s;}
+.gnb ul{display: flex; width: 30%; margin: 0 auto; justify-content: space-between; padding: 0.8rem ; }
+.gnb ul li{list-style: none; text-transform: uppercase; cursor: pointer; color: #fff; font-size: 15px;}
+
+
+/*=======Button 6============= */
+.gnbBtn{
+  border:1px solid transparent; 
+   -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+  transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+  padding: 2px 5px;
+}
+
+.gnbBtn::before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  bottom:0px;
+  z-index:-1;
+  width: 0%;
+  height:1px;
+  background: #6098FF;
+  box-shadow: inset 0px 0px 0px #6098FF;
+  display: block;
+  -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+  transition: all 0.4s cubic-bezier(.5, .24, 0, 1)
+}
+
+.gnbBtn:hover::before {
+  width:100%;
+}
+
+.gnbBtn::after {
+  content: '';
+  position: absolute;
+  right: 0px;
+  top:0px;
+  z-index:-1;
+  width: 0%;
+  height:1px;
+  background: #6098FF;
+  -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+  transition: all 0.4s cubic-bezier(.5, .24, 0, 1)
+}
+.gnbBtn:hover::after {
+  width:100%;
+}
+.gnbBtn:hover{
+  border-left:1px solid #6098FF;
+  border-right:1px solid #6098FF;
+}
+
+
+.wrapper {
+  position: relative;
+}
