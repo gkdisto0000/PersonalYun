@@ -20,6 +20,9 @@
 
 $(function(){
    $('.gnbWrap').load('/include/gnb.html');
+   $('.actions.special li a').eq(0).click(function(){
+      $('html').animate({scrollTop : ($('#one').offset().top)}, 600);
+    }); 
    
 }); 
   </script>
@@ -42,7 +45,7 @@ $(function(){
       <p>1993.09.11</p>
 
       <ul class="actions special">
-        <li><a href="#one" class="button scrolly">Discover</a></li>
+        <li><a href="#one" class="button">Discover</a></li>
       </ul>
     </div>
   </section>
@@ -287,13 +290,15 @@ $(function(){
 
 
   <!-- Scripts -->
-  <script src="assets/js/jquery.min.js"></scrip>
+  <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/jquery.scrolly.min.js"></script>
   <script src="assets/js/browser.min.js"></script>
   <script src="assets/js/breakpoints.min.js"></script>
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
 
+
+  
 
 </body>
 

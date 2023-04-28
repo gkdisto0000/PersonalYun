@@ -3874,12 +3874,14 @@ ul>li {
   transition: all 0.5s;
 }
 
+.Top:hover {font-weight: 600; height: 4em;}
+
 /* gnb */
 .container {position: relative;}
 .gnb {position: fixed; z-index: 9999999; top:-80px; left: 0; width: 100%; transition : all 0.5; background-color: #000; transition: all 0.5s;}
 .gnb ul{display: flex; width: 30%; margin: 0 auto; justify-content: space-between; padding: 0.8rem ; }
-.gnb ul li{list-style: none; text-transform: uppercase; cursor: pointer; color: #fff; font-size: 15px;}
-
+.gnb ul li{list-style: none; text-transform: uppercase; cursor: pointer; color: #fff; font-size: 15px; transition: color 0.4s;}
+.gnb ul li:hover {color: #ec99a7;}
 
 /*=======Button 6============= */
 .gnbBtn{
@@ -3922,7 +3924,9 @@ ul>li {
 }
 .gnbBtn:hover::after {
   width:100%;
+  color: #446382 ;
 }
+
 .gnbBtn:hover{
   border-left:1px solid #6098FF;
   border-right:1px solid #6098FF;
@@ -3931,4 +3935,15 @@ ul>li {
 
 .wrapper {
   position: relative;
+}
+
+
+@media screen and (max-width: 1140px) {
+  .gnb ul {width: 50%;}
+
+}
+
+@media screen and (max-width: 736px) {
+  .gnb ul {width: 90%;}
+  .gnbBtn {font-size: 12px;}
 }

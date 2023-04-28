@@ -9,9 +9,36 @@
                     about me
                 </div> 
             </li>
-            <li>skills</li>
-            <li>Projects</li>
+
+            <li class="wrapper"> 
+                <div class="gnbBtn">
+                    skills
+                </div> 
+            </li>
+
+            <li class="wrapper"> 
+                <div class="gnbBtn">
+                    Projects
+                </div> 
+            </li>
         </ul>
     </div>
 
 </div>
+
+<script>
+
+    //gnb click
+    $('.gnb ul li').eq(0).click(function(){
+      $('html').animate({scrollTop : ($('#one').offset().top)}, 600);
+    });
+    $('.gnb ul li').eq(1).click(function(){
+        $('html').animate({scrollTop : ($('#two').offset().top)}, 600);
+    });
+    $('.gnb ul li').eq(2).click(function(){
+        $('html').animate({scrollTop : ($('#three').offset().top)}, 600);
+    });
+
+
+
+</script>
