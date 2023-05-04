@@ -2838,17 +2838,30 @@ ul.icons li .icon:before {
 }
 
 /* Major Icons */
+.skillsHdr .button{margin-top: 2em;}
+
+
+.major-iconsWrap {width: 100% !important;}
 
 ul.major-icons {
   list-style: none;
   padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 ul.major-icons li {
   display: inline-block;
   padding: 2.5em;
   text-align: center;
+  width: 50%;
+  position: relative;
 }
+
+.major-txts {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #000; padding: 1em; width: 95%; opacity: 0; cursor: default; transition: opacity 0.5s;}
+
+.txtflex {display: flex; justify-content: space-between;}
+.txtflex p {width: 48%;}
 
 ul.major-icons li .icon {
   -moz-transform: rotate(45deg);
@@ -3940,10 +3953,15 @@ ul>li {
 
 @media screen and (max-width: 1140px) {
   .gnb ul {width: 50%;}
-
+  .major-txts {position: initial; opacity: 1 !important; transform: initial; background-color: #222; margin-top: 2rem;}
+  ul.major-icons li {padding: 2em 0;}
+  .skillsHdr .button{display: none;}
+ 
 }
 
 @media screen and (max-width: 736px) {
   .gnb ul {width: 90%;}
   .gnbBtn {font-size: 12px;}
+  ul.major-icons {display: block;}
+  ul.major-icons li {width: 100%; padding: 1.5em 0;}
 }
