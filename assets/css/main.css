@@ -500,14 +500,14 @@ pre code {
 }
 
 .artGroup {
-  width: 300%;
+  width: 400%;
   display: flex;
   justify-content: space-between;
   transition: all 0.5s;
 }
 
 .artGroup>.image {
-  width: calc(100% / 3);
+  width: calc(100% / 4);
 
 }
 
