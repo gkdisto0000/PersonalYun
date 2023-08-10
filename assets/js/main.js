@@ -170,6 +170,10 @@
   });
 
 
+  $('.topbutton').click(function(){
+    $('html').animate({scrollTop : ($('#one').offset().top)}, 600);
+  });
+
   
   $(window).scroll(function(){
     if($(window).scrollTop()>100){
@@ -222,23 +226,6 @@
 		}
 
 
-    // skill hover
-    $('.major-icons li').mouseover(function(){
-      $(this).children('.major-txts').css('opacity','1')
-    });
-    $('.major-icons li').mouseleave(function(){
-      $(this).children('.major-txts').css('opacity','0')
-    });
-
-
-    //skill btn
-    $('.skillall').click(function(){
-      $('.major-txts').css('opacity','1')
-    });
-
-    $('.skillrmv').click(function(){
-      $('.major-txts').css('opacity','0')
-    });
 })(jQuery);
 
 

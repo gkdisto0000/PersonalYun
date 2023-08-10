@@ -2852,13 +2852,15 @@ ul.major-icons {
 
 ul.major-icons li {
   display: inline-block;
-  padding: 2.5em;
+  padding: 2.3em 1em;
   text-align: center;
-  width: 50%;
+  width: 33.333%;
   position: relative;
 }
 
-.major-txts {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #000; padding: 1em; width: 95%; opacity: 0; cursor: default; transition: opacity 0.5s;}
+.major-txts {background-color: #000; padding: 1em; width: 95%; opacity: 1; cursor: default; margin-top: 10px;}
+.major-txts b {font-size: 1.3em; font-weight: 700;}
+.major-txts p {text-align: left; font-size: 0.60em;}
 
 .txtflex {display: flex; justify-content: space-between;}
 .txtflex p {width: 48%;}
@@ -3183,9 +3185,11 @@ button:disabled,
 }
 
 .main.style2 ul.major-icons li .icon {
-  border-color: #ffffff;
+  border-color: #ffffff; transition: background-color 0.5s;
 }
-
+.main.style2 ul.major-icons li .icon:hover {
+  background-color: #fff;
+}
 .main.style2 .icon.major {
   color: #ffffff;
 }
